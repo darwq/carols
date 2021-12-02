@@ -1,0 +1,62 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#main-section {
+  height: 100vh;
+  width: 100%;
+  background: url("https://wallpaperaccess.com/full/1888839.jpg");
+}
+
+#main-section .header {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+#main-section .player-equipment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  position: relative;
+  top: 400px;
+}
+
+/* BUTTONS */
+.player-equipment .fas {
+  margin: 3%;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease opacity;
+}
+
+.fa-step-backward {
+  color: rgb(25, 143, 25);
+}
+
+.fa-play,
+.fa-pause {
+  color: rgb(136, 18, 18);
+}
+
+.fa-step-forward {
+  color: rgb(25, 143, 25);
+}
+
+.fas:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 500px) {
+  .player-equipment .fas {
+    margin: 7.5%;
+  }
+}
